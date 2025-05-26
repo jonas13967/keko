@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- linking font awesome for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Keko Coffee</title>
+    <!-- linking swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- header / navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+              <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                </li>                   
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+       <section class="hero-section">
+        <div class="section-content">
+            <div class="hero-details">
+              <h2 class="title">KEKO'S Cofffee</h2>
+              <h3 class="subtitle">make your day great with our special
+                 coffee!</h3>
+                 <p class="description">Welcome to our coffee paradise,
+             where every beans tells a story and every cup sparks joy.</p>  
+              
+            <div class="buttons">
+                <a href="#" class="button order-now">order now</a>
+                <a href="#" class="button contact-now">contact us</a>
+            </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/v1744849198/Image-removebg-preview_o6ic9t.png" alt="hero" 
+                class="hero-image">
+            </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+       <section class="about-section" id="about"> 
+        <div class="section-content">
+            <div class="about-image-wrappper">
+             <img src="data:image/jpeg;base64,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" alt="about" 
+             class="about-image">   
+            </div>
+            <div class="about-details">
+             <h2 class="section-title">About us</h2> 
+             <p class="text">At keko coffee house in berndorf, Germany, we pride ourselves on been a go-to destination for coffee lovers and conversation seekers alike.
+                we're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.   
+             </p>  
+             <div class="social-link-list">
+             <a href="#" class="social-link"><i class="fa-brands 
+            fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands 
+            fa-instagram"></i></a>
+             <a href="#" class="social-link"><i class="fa-brands 
+            fa-x-twitter"></i></a>
+             </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- menu section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+              <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/v1746187258/aromatic-espresso-top-view-coffee-cup_191095-78008-removebg-preview_oh5beq.png" alt="hot beverages" class="menu-image" />
+                <div class="menu-details">
+                    <h3 class="name">Hot Beverages</h3>
+                    <p class="text">Wide range of steaming hot coffee to make you fresh and light.</p>
+                </div>
+                </li>
+                <li class="menu-item">
+                    <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/v1746227967/7DD092E7-C6F5-498A-8F9A-D7AB81C460CC-removebg-preview_ikqwuy.png" alt="Burger  & fenchfries" class="menu-image" />
+                    <div class="menu-details">
+                        <h3 class="name">Burger & french fries</h3>
+                    <p class="text">Quick bites to satisfy your small size hunger</p>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/e_background_removal/f_png/v1746228164/Image_2_vlq2my.jpg" alt="Dessert" class="menu-image" />
+                    <div class="menu-details">
+                        <h3 class="name">Desssert</h3>
+                        <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                    </li>               
+                <li class="menu-item">
+                    <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/e_background_removal/f_png/v1746228424/Image_3_psgxip.jpg" alt="Cold beverages" class="menu-image" />
+                    <div class="menu-details">
+                        <h3 class="name">Pizza</h3>
+                        <p class="text">Creamy and flourfy try a bite.</p>
+                    </li>  
+                    <li class="menu-item">
+                        <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/e_background_removal/f_png/v1746264433/Image_ox3hhq.jpg" alt="fruit juice" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">juice</h3>
+                        <p class="text">get a sip, very juicy </p>
+                        </div>
+                    </li> 
+                    <li class="menu-item">
+                        <img src="https://res.cloudinary.com/dbzljbjmm/image/upload/e_background_removal/f_png/v1746264904/Image_1_gfgk6v.jpg" alt="" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Special order</h3>
+                        <p class="text">satiate your palate and take you in a culinary treat </p>
+                        </div>
+                    </li>                        
+              </ul>  
+            </div>
+      
+
+       
+                            
+                    
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+ 
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+        <!-- Testimonials section  -->
+        <section class="testimonials-section" id="testimonials">
+         <h2 class="section-title">Testimonials</h2>  
+         <div class="section-content">
+            <div class="slider-container swiper">
+             <div class="slider-wrapper">
+                <ul class="testimonials-list swiper-wrapper">
+                    <li class="testimonial swiper-slide">
+                        <img src="https://www.shutterstock.com/image-photo/portrait-native-american-woman-smiling-600nw-2454532057.jpg" alt="user" class="user-image">
+                        <h3 class="name">Sarah Johnson</h3>
+                        <i class="feedback">loved the french roast. perfectly balanced and rich. will order again!</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="https://media.istockphoto.com/id/544358212/photo/happy-laughing-man.jpg?s=612x612&w=0&k=20&c=FwJw5gqpUX3A8jOdsnIqQmSOxptVcYqHzaBkz6bvtMA=" alt="user" class="user-image">
+                        <h3 class="name">"Smith Lucas</h3>
+                        <i class="feedback">Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="https://img.freepik.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-139608.jpg?ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="user" class="user-image">
+                        <h3 class="name">"michael paul</h3>
+                        <i class="feedback">Fantastic mocha flavor. Fresh beans and aromatic. quick shipping!" </i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWuTiw0w8qX1WwjdHy4bEGUDG9jEBIhk6Jg&s" alt="user" class="user-image">
+                        <h3 class="name">Anthony Thompson</h3>
+                        <i class="feedback">"Best decaf i've tried! smooth and flavourful. Arrived promptly."</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                        <img src="https://media.istockphoto.com/id/1326090973/photo/enjoying-fresh-springtime-weather.jpg?s=612x612&w=0&k=20&c=sWvILao20M-VvVFGmEfYTwff-Rm5asQGTE5NE24Abk0=" alt="user" class="user-image">
+                        <h3 class="name">Emily Harris</h3>
+                        <i class="feedback">"Excellent quality! i love the juice."</i>
+                    </li>
+                </ul>
+
+                <div class="swiper-slide-button swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+
+                
+             </div>   
+            </div>
+         </div> 
+        </section>
+        
+
+        <!-- gallery section  -->
+        <section class="gallery-section" id="gallery">
+           <h2 class="section-title">Gallery</h2> 
+           <div class="section-content">
+            <ul class="gallery-list">
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/grilled-hot-dog-meal-with-ketchup-fries-generative-ai_188544-8352.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="Gallery" class="gallery-image">
+               </li> 
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/italian-food-decoration-with-pizza-bread-pasta_23-2147686562.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="" class="gallery-image">
+               </li> 
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/top-view-table-full-various-types-food_23-2149139521.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="" class="gallery-image">
+               </li>
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/rolling-pin-near-pastry-coffee_23-2147742750.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="" class="gallery-image">
+               </li>
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/free-photo/cup-tea-sandwich-cutting-board-fabric-blue_114579-42510.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="" class="gallery-image">
+               </li>
+               <li class="gallery-item">
+                <img src="https://img.freepik.com/premium-photo/cup-hot-coffee-isolated-white_272787-163.jpg?uid=R201551514&ga=GA1.1.2063017837.1746264820&semt=ais_hybrid&w=740" alt="" class="gallery-image">
+               </li> 
+            </ul>
+           </div>
+        </section>        
+
+         <!-- contact us section  -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                       <i class="fa-solid fa-location-crosshairs"></i>
+                       <p>123 campsite Avenue, wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@Kekocoffeewebsite.com</p>
+                     </li>
+                     <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                     </li>
+                     <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - friday: 9:00Am - 5:00 PM</p>
+                     </li>
+                     <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.kekocoffeeweb.com</p>
+                     </li>
+                </ul>
+
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="your name" class="form-input"required>
+                    <input type="email" placeholder="your email" class="form-input"required>
+                    <textarea placeholder="your message" class="form-input"
+                    required></textarea>
+                    <button class="submit-button">submit</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <!--  section  -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">@2025 keko coffee</p>
+
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands 
+                   fa-facebook"></i></a>
+                   <a href="#" class="social-link"><i class="fa-brands 
+                   fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands 
+                   fa-x-twitter"></i></a>
+                    </div>
+
+                    <p class="policy-text"></p>
+                    <a href="#" class="policy-link">privacy policy</a>
+                    <span class="seperator">.</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+            </div>
+        </footer>
+
+    </main>
+      
+    <!-- linking swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+     <!-- linking custom script -->
+    <script src="adsscript.js"></script>
+</body>
+</html>
